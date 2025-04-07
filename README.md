@@ -2,7 +2,7 @@
 
 # 2D Electrostatics Simulation using Random Walk Monte Carlo
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Overview
 
@@ -36,20 +36,7 @@ The core of the simulation relies on the property that the solution to Laplace's
     *   The electric field normal to the ground plane is approximated using the finite difference between the potential at the ground (`j=0`, V=0) and the potential at the grid points just above it (`j=1`). `E_normal ≈ -(V[j=1] - V[j=0]) / h = -V[j=1] / h`.
     *   The total charge on the ground is calculated by integrating the surface charge density (`σ = ε₀ε * E_normal`) along the ground plane, approximated by summing the contributions from each segment and multiplying by the permittivity (`ε₀ε`).
 
-## How to Run
 
-1.  **Prerequisites:**
-    *   Python 3.x
-    *   NumPy library (`pip install numpy`)
-2.  **Clone the repository (or save the script):**
-    ```bash
-    git clone <your-repo-url>
-    cd <your-repo-directory>
-    ```
-3.  **Run the script:**
-    ```bash
-    python your_script_name.py
-    ```
 
 ## Configuration
 
@@ -82,10 +69,5 @@ The script will print the following information upon completion:
     *   Extend to 3D.
     *   Compare with analytical solutions for simpler geometries or with Finite Difference/Finite Element methods.
 
-## Dependencies
 
-*   [NumPy](https://numpy.org/)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (or choose another appropriate license).
