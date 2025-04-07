@@ -1,4 +1,4 @@
-# Capacitance-Computation-With-Random-Walk-Algorithm
+
 
 # 2D Electrostatics Simulation using Random Walk Monte Carlo
 
